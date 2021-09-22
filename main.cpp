@@ -68,8 +68,8 @@ void sendRequest(RequestType requestType, std::map<std::string, std::string>* he
 
         cpr::Response r = cpr::Post(cpr::Url(WEBSITE_POST),
                                     cpr::Payload(payLoad));
-        std::cout << "\t - POST request is sent.\n";
-        std::cout << "\t - Server reply:\n";
+        std::cout << "POST request is sent.\n";
+        std::cout << "Server reply:\n";
         std::cout << r.text << "\n";
     }
     else if (requestType == GET)
